@@ -1,14 +1,14 @@
 import Main from "./pages/main";
-import Layout from "./component/Layout";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import GlobalStyle from "./component/GlobalStyles";
 
 function App() {
   return (
     <BrowserRouter>
+      <GlobalStyle />
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Main />} />
-        </Route>
+        <Route path="/" element={<Main />} />
       </Routes>
     </BrowserRouter>
   );
