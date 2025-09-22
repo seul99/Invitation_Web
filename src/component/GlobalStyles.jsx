@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
+    height: -webkit-fill-available; /* iOS Safari 대응 */
   }
 
   @font-face {

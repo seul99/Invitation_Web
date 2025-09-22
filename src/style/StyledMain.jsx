@@ -20,6 +20,7 @@ export const Container = styled.div`
   margin: 0 auto;
   // min-height: 100vh;
   height: 100vh;
+  height: -webkit-fill-available; /* iOS Safari 대응 */
   // overflow-y: auto;
   display: flex;
   flex-direction: column;
