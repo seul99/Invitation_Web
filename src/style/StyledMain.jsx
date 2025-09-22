@@ -18,15 +18,15 @@ export const Container = styled.div`
 
   position: relative;
   margin: 0 auto;
-  min-height: 100vh;
-  // height: 100vh;
+  // min-height: 100vh;
+  height: 100vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 393px;
   flex-shrink: 0;
-  padding-bottom: 105px;
+  padding-bottom: 20px;
 
   /* 스크롤바 제거 */
   -ms-overflow-style: none; /* IE, Edge */
