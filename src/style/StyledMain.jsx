@@ -20,21 +20,13 @@ export const Container = styled.div`
   margin: 0 auto;
   // min-height: 100vh;
   height: 100vh;
-  overflow-y: auto;
+  // overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 393px;
   flex-shrink: 0;
   padding-bottom: 20px;
-
-  /* 스크롤바 제거 */
-  -ms-overflow-style: none; /* IE, Edge */
-  scrollbar-width: none; /* Firefox */
-  &::-webkit-scrollbar {
-    /* Chrome, Safari */
-    display: none;
-  }
 `;
 
 export const LetterImg = styled.img`
@@ -59,6 +51,11 @@ export const LetterImg = styled.img`
   }
 `;
 export const Paper = styled.div`
+  // width: 100%;
+  // height: 100%;
+  width: calc(100% - 40px); /* 좌우 20px씩 여백 */
+  height: calc(100% - 20px);
+  display: flex;
   margin-top: 20px;
   opacity: 0;
   transform: translateY(20px);
