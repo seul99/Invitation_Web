@@ -9,14 +9,17 @@ const floatAni = keyframes`
 `;
 
 export const Container = styled.div`
-  background-image: url(${process.env.PUBLIC_URL}/images/bg.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  // background-image: url(${process.env.PUBLIC_URL}/images/bg.svg);
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+
+  background: #221912ff;
+
   position: relative;
   margin: 0 auto;
-  // min-height: 100vh;
-  height: 100vh;
+  min-height: 100vh;
+  // height: 100vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -40,7 +43,7 @@ export const LetterImg = styled.img`
   top: 50%;
   left: 50%;
   animation: ${floatAni} 1.5s infinite ease-in-out;
-  filter: drop-shadow(0 0 20px rgba(255, 232, 168, 1));
+  filter: drop-shadow(0 0 20px rgba(250, 241, 214, 0.16));
   cursor: pointer;
   transition: opacity 0.5s ease, transform 0.5s ease;
 
@@ -56,13 +59,10 @@ export const LetterImg = styled.img`
   }
 `;
 export const Paper = styled.div`
-  position: absolute;
-
-  top: 2.5%;
-  height: calc(100% - 5%);
+  margin-top: 20px;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 2s ease, transform 2s ease;
 
   &.fadeIn {
     opacity: 1;

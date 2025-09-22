@@ -3,12 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 339px;
   height: auto;
-
-  background-image: url(${process.env.PUBLIC_URL}/images/paper2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,17 +22,17 @@ export const Content = styled.div`
   font-family: Pretendard;
   font-size: 15px;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 25px; /* 166.667% */
-  margin: 30px 10px;
-
-  span {
-    font-weight: 500;
-  }
+  margin: 30px 5px;
 
   &:last-child {
     margin-bottom: 10px;
   }
+`;
+
+export const BoldContent = styled.span`
+  font-weight: 400;
 `;
 
 export const ImageBox = styled.div`
@@ -57,12 +52,16 @@ const PaperContent = () => {
         <img src={`${process.env.PUBLIC_URL}/images/INVITATION.svg`} />
       </Title>
       <Content>
-        제1대 <span>WHATDOOR MAN, 이한</span>의 파트너 요원으로 선발되셨습니다.{" "}
+        제1대 <BoldContent>WHATDOOR MAN, 이한</BoldContent>의 파트너 요원
         <br />
+        으로 선발되었습니다. <br />
         <br />
-        지금부터 당신의 임무는 단 하나,
-        <br /> 왓도어에이전시의 시크릿 요원이 되는 것. <br />
-        준비되셨습니까? <br />
+        오늘부터 당신은 <br />
+        왓도어 에이전시 소속의 요원 으로서 <br />
+        <BoldContent>작전명 &lt;Honey-Trap&gt;</BoldContent>에 투입됩니다.
+        <br />
+        <br /> 이에 동의한다면 아래 신청서를 작성하십시오.
+        <br />
         <br />
         날짜: 10월 17일 - 20일 <br />
         장소: 펠리칸 카페
