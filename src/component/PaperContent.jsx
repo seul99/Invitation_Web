@@ -7,7 +7,10 @@ export const Container = styled.div`
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
 
   padding: 20px;
+  /* safari 깨짐현상 해결*/
+  // height: 100%;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
   /* 스크롤바 제거 */
   -ms-overflow-style: none; /* IE, Edge */
