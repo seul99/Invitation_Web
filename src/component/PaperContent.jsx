@@ -34,7 +34,7 @@ export const Content = styled.div`
   font-family: Pretendard;
   font-size: 15px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 25px; /* 166.667% */
   margin: 30px 5px;
 
@@ -44,7 +44,7 @@ export const Content = styled.div`
 `;
 
 export const BoldContent = styled.span`
-  font-weight: 400;
+  font-weight: 700;
 `;
 
 export const ImageBox = styled.div`
@@ -79,7 +79,7 @@ const PaperContent = () => {
           날짜: 10월 17일 - 20일 <br />
           장소: 펠리칸 카페
           <br />
-          서울특별시 마포구 독막로14길 27
+          서울특별시 마포구 독막로14길 27 <a></a>
         </Content>
         <ImageBox>
           <TempImg src={`${process.env.PUBLIC_URL}/images/01_post.png`} />
@@ -88,9 +88,9 @@ const PaperContent = () => {
           <TempImg src="https://placehold.co/300x200" />
         </ImageBox>
         <Content>
-          <span>날짜 선택하러 가기</span> <br />
+          <BoldContent>날짜 선택하러 가기</BoldContent> <br />
           구글 설문지 링크 : <a>링크 첨부 예정</a> <br />
-          예약 접수 기간 : 10월 1일 21시 ~ 10월 16일
+          예약 접수 기간 : 10월 1일 21시 ~ 10월 16일 <br />
         </Content>
       </ContentWrap>
     </Container>
