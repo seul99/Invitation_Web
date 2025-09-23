@@ -7,8 +7,11 @@ export const Container = styled.div`
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
 
   padding: 20px;
+
   /* safari 깨짐현상 해결*/
-  height: 100%;
+  // height: 100%;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
