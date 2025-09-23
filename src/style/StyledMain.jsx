@@ -21,11 +21,9 @@ export const Container = styled.div`
   // min-height: 100vh;
   height: 100vh;
   // height: -webkit-fill-available; /* iOS Safari 대응 */
-  // overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // width: 393px;
   width: 100%;
   max-width: 393px;
   flex-shrink: 0;
