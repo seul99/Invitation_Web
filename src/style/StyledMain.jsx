@@ -23,14 +23,13 @@ export const Box = styled.div`
   position: relative;
   margin: 0 auto;
   width: 100%;
-  // height: 100%;
   max-width: 393px;
   min-height: 100dvh;
-  // max-height: 100vh;
   height: -webkit-fill-available; /* iOS Safari 대응 */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   padding-bottom: 20px;
   overflow-y: hidden;
@@ -42,7 +41,7 @@ export const LetterImg = styled.img`
   z-index: 10;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* ios 위치 수정 */
+
   animation: ${floatAni} 1.5s infinite ease-in-out;
   filter: drop-shadow(0 0 20px rgba(250, 241, 214, 0.16));
   cursor: pointer;
@@ -59,6 +58,7 @@ export const LetterImg = styled.img`
     pointer-events: none;
   }
 `;
+
 export const Paper = styled.div`
   width: calc(100% - 40px); /* 좌우 20px씩 여백 */
   // height: calc(100% - 20px);
@@ -66,7 +66,7 @@ export const Paper = styled.div`
   min-height: 0;
 
   display: flex;
-  margin-top: 20px;
+
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 2s ease, transform 2s ease;
