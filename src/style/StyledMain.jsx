@@ -18,9 +18,9 @@ export const Container = styled.div`
 
   position: relative;
   margin: 0 auto;
-  // min-height: 100vh;
-  height: 100vh;
-  // height: -webkit-fill-available; /* iOS Safari 대응 */
+  min-height: 100vh;
+  // height: 100vh;
+  height: -webkit-fill-available; /* iOS Safari 대응 */
   // overflow-y: auto;
   display: flex;
   flex-direction: column;
