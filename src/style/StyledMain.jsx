@@ -25,7 +25,7 @@ export const Box = styled.div`
   width: 100%;
   // height: 100%;
   max-width: 393px;
-  min-height: 100vh;
+  min-height: 100dvh;
   // max-height: 100vh;
   height: -webkit-fill-available; /* iOS Safari 대응 */
   display: flex;
