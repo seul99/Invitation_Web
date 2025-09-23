@@ -41,7 +41,8 @@ export const LetterImg = styled.img`
   z-index: 10;
   top: 50%;
   left: 50%;
-  right: 50%;
+  // right: 50%;
+  transform: translate(-50%, -50%);
 
   animation: ${floatAni} 1.5s infinite ease-in-out;
   filter: drop-shadow(0 0 20px rgba(250, 241, 214, 0.16));
@@ -67,7 +68,7 @@ export const Paper = styled.div`
   min-height: 0;
 
   display: flex;
-
+  padding-top: 20px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 2s ease, transform 2s ease;
