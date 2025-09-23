@@ -40,10 +40,8 @@ export const LetterImg = styled.img`
   position: absolute;
   z-index: 10;
   top: 50%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  transform: translateY(-50%);
+  left: 50%;
+  right: 50%;
 
   animation: ${floatAni} 1.5s infinite ease-in-out;
   filter: drop-shadow(0 0 20px rgba(250, 241, 214, 0.16));
