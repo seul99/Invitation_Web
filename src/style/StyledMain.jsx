@@ -9,28 +9,34 @@ const floatAni = keyframes`
 `;
 
 export const Container = styled.div`
-  // background-image: url(${process.env.PUBLIC_URL}/images/bg.svg);
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-
-  background: #221912ff;
-
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+  position: relative;
+`;
+export const Box = styled.div`
   position: relative;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 393px;
   // min-height: 100vh;
-  height: 100vh;
+  max-height: 100vh;
   // height: -webkit-fill-available; /* iOS Safari 대응 */
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 393px;
   flex-shrink: 0;
   padding-bottom: 20px;
+  overflow-y: hidden;
   overflow-x: hidden;
+  background: #221912ff;
 `;
-
 export const LetterImg = styled.img`
   position: absolute;
   z-index: 10;
