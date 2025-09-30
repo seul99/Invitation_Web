@@ -14,6 +14,13 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
 
+  @font-face {
+    font-family: 'KoPubWorld';
+    src: url('/font/KoPubWorld-Batang-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
   body {
     background-color: #f0f0f0;
     height: 100%;

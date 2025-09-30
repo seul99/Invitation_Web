@@ -28,7 +28,12 @@ export const Container = styled.div`
     display: none;
   }
 `;
-
+export const Mline = styled.img`
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+`;
 export const ContentWrap = styled.div`
   display: flex;
   justify-content: center;
@@ -42,7 +47,7 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   color: #fff;
-  font-family: Pretendard;
+  font-family: KoPubWorld;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -68,9 +73,26 @@ export const TempImg = styled.img`
   height: auto;
 `;
 
+export const LinkBox = styled.div`
+  display: block; /* inline-block → block */
+  padding: 5px 10px;
+  background-color: #860000ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 auto; /* block일 때만 중앙 정렬 */
+  max-width: fit-content; /* 내용만큼만 너비 */
+  a {
+    all: unset;
+  }
+`;
+
 const PaperContent = () => {
   return (
     <Container>
+      <Mline src={`${process.env.PUBLIC_URL}/images/mline2.png`} />
       <ContentWrap>
         <Title>
           <img src={`${process.env.PUBLIC_URL}/images/INVITATION.svg`} />
@@ -99,11 +121,16 @@ const PaperContent = () => {
           <TempImg src={`${process.env.PUBLIC_URL}/images/04_post.png`} />
         </ImageBox>
         <Content>
-          <BoldContent>날짜 선택하러 가기</BoldContent> <br />
-          구글 설문지 링크 : <a>링크 첨부 예정</a> <br />
-          예약 접수 기간 : 10월 1일 21시 ~ 10월 16일 <br />
+          <LinkBox>
+            <a href="https://witchform.com/deposit_form.php?idx=908724">
+              폼 작성하러 가기
+            </a>
+          </LinkBox>{" "}
+          <br />
+          예약 접수 기간 : 10월 3일 21시 ~ 10월 16일 <br />
         </Content>
       </ContentWrap>
+      <Mline src={`${process.env.PUBLIC_URL}/images/mline.png`} />
     </Container>
   );
 };

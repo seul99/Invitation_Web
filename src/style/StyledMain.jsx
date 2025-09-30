@@ -12,6 +12,10 @@ export const Container = styled.div`
   // width: 100vw;
   width: 100%;
   height: 100vh;
+  max-width: 393px;
+  min-height: 100vh;
+  overflow: visible;
+
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -19,11 +23,6 @@ export const Container = styled.div`
   flex-direction: column;
   background: #f0f0f0;
   position: relative;
-
-  // width: 100%;
-  max-width: 393px;
-  min-height: 100vh;
-  overflow: visible;
 `;
 export const Box = styled.div`
   position: relative;
