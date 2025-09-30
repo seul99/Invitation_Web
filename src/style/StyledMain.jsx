@@ -9,13 +9,8 @@ const floatAni = keyframes`
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  max-width: 393px;
-  min-height: 100vh;
-  overflow: visible;
-
-  position: relative;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -26,27 +21,36 @@ export const Container = styled.div`
 `;
 
 export const Box = styled.div`
+  // position: relative;
+  // margin: 0 auto;
+  // width: 100%;
+  // max-width: 393px;
+  // min-height: 100vh;
+  // height: -webkit-fill-available; /* iOS Safari 대응 */
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  // flex-shrink: 0;
+  // padding-bottom: 20px;
+  // overflow-y: hidden;
+  // overflow-x: hidden;
+  // background: #221912ff;
+
   position: relative;
   margin: 0 auto;
   width: 100%;
-  max-width: 393px;
-  min-height: 100dvh;
-  height: -webkit-fill-available; /* iOS Safari 대응 */
+  height: 100%;
+  max-width: 390px;
+  max-height: 844px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  padding-bottom: 20px;
   overflow-y: hidden;
   overflow-x: hidden;
+  padding-bottom: 20px;
   background: #221912ff;
-
-  width: 100%;
-  height: 100vh;
-  max-width: 393px;
-  min-height: 100vh;
-  overflow: visible;
 `;
 export const LetterImg = styled.img`
   position: absolute;
