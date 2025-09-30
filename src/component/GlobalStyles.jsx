@@ -10,8 +10,9 @@ const GlobalStyle = createGlobalStyle`
 
   html, body {
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
+    height: 100%;
   }
 
     body::-webkit-scrollbar {
@@ -21,8 +22,9 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'KoPubWorld';
     src: url('/font/KoPubWorld-Batang-Light.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
+    font-display: swap;
   }
 
   body {

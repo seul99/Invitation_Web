@@ -48,7 +48,7 @@ export const LetterImg = styled.img`
   left: 50%;
   // right: 50%;
   transform: translate(-50%, -50%);
-
+  max-width: 100%;
   animation: ${floatAni} 1.5s infinite ease-in-out;
   filter: drop-shadow(0 0 20px rgba(250, 241, 214, 0.16));
   cursor: pointer;
