@@ -9,13 +9,13 @@ const floatAni = keyframes`
 `;
 
 export const Container = styled.div`
-  // width: 100vw;
   width: 100%;
   height: 100vh;
   max-width: 393px;
   min-height: 100vh;
   overflow: visible;
 
+  position: relative;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -24,6 +24,7 @@ export const Container = styled.div`
   background: #f0f0f0;
   position: relative;
 `;
+
 export const Box = styled.div`
   position: relative;
   margin: 0 auto;
@@ -40,6 +41,12 @@ export const Box = styled.div`
   overflow-y: hidden;
   overflow-x: hidden;
   background: #221912ff;
+
+  width: 100%;
+  height: 100vh;
+  max-width: 393px;
+  min-height: 100vh;
+  overflow: visible;
 `;
 export const LetterImg = styled.img`
   position: absolute;

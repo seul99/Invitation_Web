@@ -47,7 +47,7 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   color: #fff;
-  font-family: KoPubWorld;
+  font-family: KoPubBatang;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
