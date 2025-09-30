@@ -8,6 +8,11 @@ export const Container = styled.div`
 
   padding: 20px;
 
+  width: 100%;
+  max-width: 393px;
+  min-height: 100vh;
+  overflow: visible;
+
   /* safari 깨짐현상 해결*/
   // height: 100%;
   flex: 1;
@@ -90,8 +95,8 @@ const PaperContent = () => {
         <ImageBox>
           <TempImg src={`${process.env.PUBLIC_URL}/images/01_post.png`} />
           <TempImg src={`${process.env.PUBLIC_URL}/images/02_post.jpg`} />
-          <TempImg src="https://placehold.co/300x200" />
-          <TempImg src="https://placehold.co/300x200" />
+          <TempImg src={`${process.env.PUBLIC_URL}/images/03_post.png`} />
+          <TempImg src={`${process.env.PUBLIC_URL}/images/04_post.png`} />
         </ImageBox>
         <Content>
           <BoldContent>날짜 선택하러 가기</BoldContent> <br />
