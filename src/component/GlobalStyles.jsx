@@ -14,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
 
+    body::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Webkit */
+  }
+
   @font-face {
     font-family: 'KoPubWorld';
     src: url('/font/KoPubWorld-Batang-Light.ttf') format('truetype');
@@ -24,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #f0f0f0;
     height: 100%;
-    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    font-family: 'KoPubWorld','Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
       system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
       'Noto Sans KR', 'Malgun Gothic', 'Pyeojin Gothic','Cafe24Ohsquare', 'SeoulAlrim',sans-serif;
     font-weight: 400;
