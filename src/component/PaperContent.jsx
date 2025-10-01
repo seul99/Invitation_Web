@@ -98,9 +98,8 @@ const PaperContent = () => {
           <img src={`${process.env.PUBLIC_URL}/images/INVITATION.svg`} />
         </Title>
         <Content>
-          제1대 <BoldContent>WHATDOOR MAN, 이한</BoldContent>의 파트너 요원
-          <br />
-          으로 선발되었습니다. <br />
+          제1대 <BoldContent>WHATDOOR MAN, 이한</BoldContent>의 파트너 <br />
+          요원으로 선발되었습니다. <br />
           <br />
           오늘부터 당신은 <br />
           왓도어 에이전시 소속의 요원 으로서 <br />
